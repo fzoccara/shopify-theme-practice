@@ -94,10 +94,10 @@
     "164621255698e552ea": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class =\"custom-attributes-wrapper product-single__description rte\">\n {%assign custom_attributes = product.metafields.custom_attributes %}\n  {%if custom_attributes.size > 0 %}  \n   <h3>Additional information:<\/h3>\n     <ul>\n       {% for field in custom_attributes %}\n        {% assign attribute_code = field | first %}\n        {% assign attribute_value = field | last %}\n         <li class=\"custom-attribute-item\"><span class=\"custom-attribute-name\">{{ attribute_code }}<\/span>: <span class=\"custom-attribute-value\">{{attribute_value}}<\/span> <\/li>\n       {% endfor %}\n     <\/ul>\n  {%endif%}\n  <\/div>\n <br\/>",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "custom_liquid": "{{ product.metafields.my_fields.html_360 }}",
+        "color_scheme": "accent-2",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
