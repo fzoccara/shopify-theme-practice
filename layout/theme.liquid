@@ -206,6 +206,9 @@
     if (Shopify.designMode) {
       document.documentElement.classList.add('shopify-design-mode');
     }
+      
+    <script src="https://scripts.sirv.com/sirv.js"></script>
+
     </script>
   </head>
 
@@ -260,8 +263,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-
-    <script src="https://scripts.sirv.com/sirv.js"></script>
 
   {% render 'spurit_sct_theme_snippet' %}
 </body>
